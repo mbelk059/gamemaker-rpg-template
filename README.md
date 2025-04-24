@@ -1,4 +1,4 @@
-This is a basic 2d pixel rpg template in gamemaker to help me make games. It includes basic systems such as:
+This is a basic 2d pixel rpg template in gamemaker to help make any rpg. It includes basic systems such as:
 - dialogue + branching
 - object interaction
 - player movement
