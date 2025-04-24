@@ -16,3 +16,9 @@ future additions:
 - menu system
 - save and load
 - cutscene system
+- dialogue portraits
+- memory flag
+- party system
+- quest log
+- camera effects
+- sound design
