@@ -3,6 +3,7 @@ This is a basic 2d pixel rpg template in gamemaker to help make any rpg. It incl
 - object interaction
 - player movement
 - camera movement
+- cutscene system
 - npc interaction + ai
 - inventory system
 - using items from inventory
@@ -15,7 +16,6 @@ future additions:
 - fixing BUGSSS
 - menu system
 - save and load
-- cutscene system
 - dialogue portraits
 - memory flag
 - party system
