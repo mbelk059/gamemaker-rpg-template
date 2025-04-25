@@ -1,12 +1,21 @@
-// Check if obj_warp_controller exists
-if (instance_exists(obj_warp_controller)) {
-    // Stop walking animation and show correct idle sprite
-    if (sprite_index == spr_player_right) sprite_index = spr_player_right_idle; 
-    else if (sprite_index == spr_player_left) sprite_index = spr_player_left_idle; 
-    else if (sprite_index == spr_player_up) sprite_index = spr_player_up_idle;
-    else if (sprite_index == spr_player_down) sprite_index = spr_player_down_idle;
+if (variable_global_exists("cutscene_active") && global.cutscene_active) {
+    // Check if cutscene controller exists AND is currently on a move_player action
+    if (instance_exists(obj_cutscene_controller) && 
+        obj_cutscene_controller.current_step < array_length(obj_cutscene_controller.sequence) &&
+        obj_cutscene_controller.sequence[obj_cutscene_controller.current_step].type != "move_player") {
+        
+        // Set idle sprite based on current direction
+        if (sprite_index == spr_player_right || sprite_index == spr_player_right_idle) 
+            sprite_index = spr_player_right_idle;
+        else if (sprite_index == spr_player_left || sprite_index == spr_player_left_idle) 
+            sprite_index = spr_player_left_idle;
+        else if (sprite_index == spr_player_up || sprite_index == spr_player_up_idle)
+            sprite_index = spr_player_up_idle;
+        else if (sprite_index == spr_player_down || sprite_index == spr_player_down_idle)
+            sprite_index = spr_player_down_idle;
+    }
     
-    return; // Exit movement
+    exit; // Skip ALL player input processing
 }
 
 // Check if obj_dialog exists
@@ -43,7 +52,10 @@ else
 
 if (keyboard_check_pressed(vk_space))
 {
-    var _inst  = instance_create_depth(x, y, depth, obj_attack);
-    _inst.image_angle = facing;
-    _inst.damage *= damage;
+    // Only allow attacks when not in a cutscene
+    if (!variable_global_exists("cutscene_active") || !global.cutscene_active) {
+        var inst = instance_create_depth(x, y, depth, obj_attack);
+        inst.image_angle = facing;
+        inst.damage *= damage;
+    }
 }

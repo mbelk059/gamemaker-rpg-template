@@ -23,6 +23,8 @@
     {"name":"obj_attack","order":7,"path":"objects/obj_attack/obj_attack.yy",},
     {"name":"obj_burger","order":16,"path":"objects/obj_burger/obj_burger.yy",},
     {"name":"obj_carry_data","order":11,"path":"objects/obj_carry_data/obj_carry_data.yy",},
+    {"name":"obj_cutscene_controller","order":17,"path":"objects/obj_cutscene_controller/obj_cutscene_controller.yy",},
+    {"name":"obj_cutscene_trigger","order":18,"path":"objects/obj_cutscene_trigger/obj_cutscene_trigger.yy",},
     {"name":"obj_dialog","order":1,"path":"objects/obj_dialog/obj_dialog.yy",},
     {"name":"obj_enemy_parent","order":8,"path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},
     {"name":"obj_enemy1","order":9,"path":"objects/obj_enemy1/obj_enemy1.yy",},

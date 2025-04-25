@@ -42,6 +42,8 @@
     {"id":{"name":"obj_attack","path":"objects/obj_attack/obj_attack.yy",},},
     {"id":{"name":"obj_burger","path":"objects/obj_burger/obj_burger.yy",},},
     {"id":{"name":"obj_carry_data","path":"objects/obj_carry_data/obj_carry_data.yy",},},
+    {"id":{"name":"obj_cutscene_controller","path":"objects/obj_cutscene_controller/obj_cutscene_controller.yy",},},
+    {"id":{"name":"obj_cutscene_trigger","path":"objects/obj_cutscene_trigger/obj_cutscene_trigger.yy",},},
     {"id":{"name":"obj_dialog","path":"objects/obj_dialog/obj_dialog.yy",},},
     {"id":{"name":"obj_enemy_parent","path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},},
     {"id":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},},

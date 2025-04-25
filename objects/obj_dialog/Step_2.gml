@@ -1,27 +1,39 @@
-if (current_message < 0) exit;
+if (current_message < 0 || current_message >= array_length(messages)) exit;
     
 var _str = messages[current_message].msg;
-
 // Track whether we just completed the message this frame
 var just_completed = false;
 
 // Text Unrolling Logic
 if (current_char < string_length(_str))
 {
+    waiting_for_input = false;  // Still displaying text
+    
     // If space is pressed, show the full message
     if (keyboard_check_pressed(input_key) && current_char > 0)
     {
         current_char = string_length(_str);
         draw_message = _str; // Set the full message immediately
         just_completed = true; // Mark that we just completed the message
+        waiting_for_input = true;  // Now waiting for input to proceed
     }
     else
     {
         // Normal text scrolling
         current_char += char_speed;
         draw_message = string_copy(_str, 1, floor(current_char));
+        
+        // If we just finished displaying the text naturally
+        if (current_char >= string_length(_str))
+        {
+            waiting_for_input = true;  // Now waiting for input to proceed
+        }
     }
-}    
+}
+else
+{
+    waiting_for_input = true;  // Full message is displayed, waiting for input
+}
 
 // Only allow proceeding if the full message is displayed AND we didn't just complete it
 var can_proceed = (current_char >= string_length(_str)) && !just_completed;
@@ -44,12 +56,12 @@ if (is_array(dialog_choices) && array_length(dialog_choices) > 0 && can_proceed)
             current_message = 0;
             current_char = 0;
             draw_message = ""; // Reset the draw message
+            waiting_for_input = false;  // Reset waiting status
         }
         
         dialog_choices = []; // Clear choices after selection
     }
 }    
-
 // Move to Next Message (if no choices and can proceed)
 else if (keyboard_check_pressed(input_key) && can_proceed)
 {
@@ -59,6 +71,7 @@ else if (keyboard_check_pressed(input_key) && can_proceed)
         current_message++;
         current_char = 0;
         draw_message = ""; // Reset the draw message
+        waiting_for_input = false;  // Reset waiting status
         
         // Check if the new message has choices
         if (current_message < array_length(messages)) {
