@@ -10,8 +10,8 @@
   "name":"obj_warp_controller",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Room Transitions",
+    "path":"folders/Objects/Room Transitions.yy",
   },
   "parentObjectId":null,
   "persistent":true,

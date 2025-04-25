@@ -8,8 +8,8 @@
   "name":"obj_burger",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Inventory System",
+    "path":"folders/Objects/Inventory System.yy",
   },
   "parentObjectId":{
     "name":"obj_interactable_parent",

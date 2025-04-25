@@ -8,8 +8,8 @@
   "name":"obj_warp_to",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Room Transitions",
+    "path":"folders/Objects/Room Transitions.yy",
   },
   "parentObjectId":null,
   "persistent":false,

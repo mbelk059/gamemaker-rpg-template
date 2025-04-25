@@ -19,6 +19,9 @@ function start_cutscene() {
                 {type: "dialog", messages: [
                     {name: "Max", msg: "Testing the cutscene system!"}
                 ]},
+                {type: "dialog", messages: [
+                    {name: "Bunny", msg: "testing a second boxxxxxxxxxxxx...."}
+                ]},
                 {type: "wait", time: 60},
                 {type: "move_player", x: x + 32, y: y - 32, speed: 1},
                 {type: "end_cutscene"}

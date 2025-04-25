@@ -6,8 +6,8 @@
   "name":"obj_carry_data",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Inventory System",
+    "path":"folders/Objects/Inventory System.yy",
   },
   "parentObjectId":null,
   "persistent":true,
