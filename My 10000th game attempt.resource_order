@@ -27,6 +27,8 @@
   ],
   "ResourceOrderSettings":[
     {"name":"Font2","order":1,"path":"fonts/Font2/Font2.yy",},
+    {"name":"obj_bed","order":25,"path":"objects/obj_bed/obj_bed.yy",},
+    {"name":"obj_bookshelf","order":26,"path":"objects/obj_bookshelf/obj_bookshelf.yy",},
     {"name":"obj_burger","order":3,"path":"objects/obj_burger/obj_burger.yy",},
     {"name":"obj_cutscene_trigger","order":1,"path":"objects/obj_cutscene_trigger/obj_cutscene_trigger.yy",},
     {"name":"obj_dialog","order":1,"path":"objects/obj_dialog/obj_dialog.yy",},
@@ -47,6 +49,8 @@
     {"name":"Room2_1","order":2,"path":"rooms/Room2_1/Room2_1.yy",},
     {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
     {"name":"item_functions","order":1,"path":"scripts/item_functions/item_functions.yy",},
+    {"name":"spr_bed","order":36,"path":"sprites/spr_bed/spr_bed.yy",},
+    {"name":"spr_bookshelf","order":37,"path":"sprites/spr_bookshelf/spr_bookshelf.yy",},
     {"name":"spr_box","order":7,"path":"sprites/spr_box/spr_box.yy",},
     {"name":"spr_burger","order":25,"path":"sprites/spr_burger/spr_burger.yy",},
     {"name":"spr_enemy2","order":2,"path":"sprites/spr_enemy2/spr_enemy2.yy",},
