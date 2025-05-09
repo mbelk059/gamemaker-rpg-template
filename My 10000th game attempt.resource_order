@@ -45,6 +45,7 @@
     {"name":"obj_plant","order":23,"path":"objects/obj_plant/obj_plant.yy",},
     {"name":"obj_red_door","order":14,"path":"objects/obj_red_door/obj_red_door.yy",},
     {"name":"obj_warp_to","order":1,"path":"objects/obj_warp_to/obj_warp_to.yy",},
+    {"name":"rm_base","order":4,"path":"rooms/rm_base/rm_base.yy",},
     {"name":"rm_init","order":3,"path":"rooms/rm_init/rm_init.yy",},
     {"name":"Room2_1","order":2,"path":"rooms/Room2_1/Room2_1.yy",},
     {"name":"Room2","order":1,"path":"rooms/Room2/Room2.yy",},
