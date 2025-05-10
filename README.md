@@ -10,6 +10,7 @@ This is a basic 2d pixel rpg template in gamemaker to help make any rpg. It incl
 - room transitions
 - real-time battles
 - health xp levels
+- starter sprites for art
 
 future additions:
 - fixing BUGSSS
