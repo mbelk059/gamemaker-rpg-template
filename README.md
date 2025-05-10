@@ -4,12 +4,11 @@ This is a basic 2d pixel rpg template in gamemaker to help make any rpg. It incl
 - player movement
 - camera movement
 - cutscene system
-- npc interaction + ai
-- inventory system
+- npc interaction
+- inventory system 
 - using items from inventory
 - room transitions
 - real-time battles
-- turn based battle
 - health xp levels
 
 future additions:
@@ -19,6 +18,7 @@ future additions:
 - dialogue portraits
 - memory flag
 - party system
+- turn based battle
 - quest log
 - camera effects
 - sound design
