@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bed",
+  "%Name":"obj_chair",
   "eventList":[],
   "managed":true,
-  "name":"obj_bed",
+  "name":"obj_chair",
   "overriddenProperties":[],
   "parent":{
     "name":"Furniture",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bed",
-    "path":"sprites/spr_bed/spr_bed.yy",
+    "name":"spr_chair",
+    "path":"sprites/spr_chair/spr_chair.yy",
   },
   "spriteMaskId":null,
   "visible":true,

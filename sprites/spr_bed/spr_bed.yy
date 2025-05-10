@@ -2,9 +2,9 @@
   "$GMSprite":"",
   "%Name":"spr_bed",
   "bboxMode":0,
-  "bbox_bottom":39,
+  "bbox_bottom":43,
   "bbox_left":0,
-  "bbox_right":22,
+  "bbox_right":25,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -16,7 +16,7 @@
   ],
   "gridX":0,
   "gridY":0,
-  "height":40,
+  "height":44,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"2e8edf59-ca6b-4233-9310-78f794bfa008","blendMode":0,"displayName":"default","isLocked":false,"name":"2e8edf59-ca6b-4233-9310-78f794bfa008","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Furniture",
+    "path":"folders/Sprites/Furniture.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":23,
+  "width":26,
 }
