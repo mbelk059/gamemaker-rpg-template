@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_plant",
+  "%Name":"obj_stand_little",
   "eventList":[],
   "managed":true,
-  "name":"obj_plant",
+  "name":"obj_stand_little",
   "overriddenProperties":[],
   "parent":{
     "name":"Furniture",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_plant",
-    "path":"sprites/spr_plant/spr_plant.yy",
+    "name":"spr_stand",
+    "path":"sprites/spr_stand/spr_stand.yy",
   },
   "spriteMaskId":null,
   "visible":true,

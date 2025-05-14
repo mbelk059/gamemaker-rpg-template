@@ -40,5 +40,5 @@
     "path":"sprites/spr_warp_to/spr_warp_to.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

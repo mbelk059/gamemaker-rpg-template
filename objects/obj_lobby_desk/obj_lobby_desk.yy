@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_plant",
+  "%Name":"obj_lobby_desk",
   "eventList":[],
   "managed":true,
-  "name":"obj_plant",
+  "name":"obj_lobby_desk",
   "overriddenProperties":[],
   "parent":{
     "name":"Furniture",
     "path":"folders/Objects/Furniture.yy",
   },
-  "parentObjectId":{
-    "name":"obj_wall",
-    "path":"objects/obj_wall/obj_wall.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_plant",
-    "path":"sprites/spr_plant/spr_plant.yy",
+    "name":"spr_lobby_desk",
+    "path":"sprites/spr_lobby_desk/spr_lobby_desk.yy",
   },
   "spriteMaskId":null,
   "visible":true,
