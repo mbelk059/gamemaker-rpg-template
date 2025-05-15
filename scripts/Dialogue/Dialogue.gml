@@ -4,6 +4,7 @@ global.char_colors = {
     "Bunny": c_aqua,
     "Bob": c_orange,
     "burger": c_black,
+    "Fox": c_orange,
 }
 
 
@@ -66,6 +67,19 @@ name: "Bob",
 msg: "o"  
 },
 ]
+
+
+global.foxlobby = [
+{
+    name: "Fox",
+    msg: "I'm not doing anything suspicious..."
+},
+{
+    name: "Fox",
+    msg: "What are you looking at??!!"
+},
+]
+
 
 global.burger_state1 = [{msg: "It's a burger." }];
 global.burger_state2 = [{msg: "It's still a burger." }];
