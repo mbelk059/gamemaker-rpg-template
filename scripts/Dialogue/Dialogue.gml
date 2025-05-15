@@ -76,7 +76,7 @@ global.foxlobby = [
 },
 {
     name: "Fox",
-    msg: "What are you looking at??!!"
+    msg: "Hey what are you looking at??!!"
 },
 ]
 

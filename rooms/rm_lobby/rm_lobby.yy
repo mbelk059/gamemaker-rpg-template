@@ -48,6 +48,7 @@
     {"name":"inst_3EE89639","path":"rooms/rm_lobby/rm_lobby.yy",},
     {"name":"inst_7F9D0154","path":"rooms/rm_lobby/rm_lobby.yy",},
     {"name":"inst_7D1AA638","path":"rooms/rm_lobby/rm_lobby.yy",},
+    {"name":"inst_3B641FD1","path":"rooms/rm_lobby/rm_lobby.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -80,6 +81,7 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_npc_parent","path":"objects/obj_npc_parent/obj_npc_parent.yy",},"propertyId":{"name":"dialog","path":"objects/obj_npc_parent/obj_npc_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"global.foxlobby",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_fox","path":"objects/obj_fox/obj_fox.yy",},"propertyId":{"name":"dialog","path":"objects/obj_fox/obj_fox.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"global.foxlobby",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":385.0,"y":427.0,},
+        {"$GMRInstance":"v1","%Name":"inst_3B641FD1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3B641FD1","objectId":{"name":"obj_burger","path":"objects/obj_burger/obj_burger.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":480.0,"y":448.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Walls","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_3B2ABB6F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3B2ABB6F","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":21.0,"scaleY":1.0,"x":368.0,"y":384.0,},
