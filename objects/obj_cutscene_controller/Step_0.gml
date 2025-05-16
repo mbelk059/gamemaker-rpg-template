@@ -11,10 +11,22 @@ if (wait_time > 0) {
     exit;
 }
 
+// Check if we're waiting for a fade effect to complete
+if (waiting_for_fade) {
+    if (instance_exists(fade_controller) && !fade_controller.is_fading()) {
+        waiting_for_fade = false;
+    } else {
+        exit; // Still waiting for fade to complete
+    }
+}
+
 // If there are no more actions, end the cutscene
 if (current_step >= array_length(sequence)) {
     global.cutscene_active = false;
     is_active = false;
+    
+    // This cleanup is now handled by the fade callback
+    // instead of happening instantly
     instance_destroy();
     exit;
 }
@@ -24,34 +36,98 @@ var action = sequence[current_step];
 var action_complete = false;
 
 switch (action.type) {
-    case "move_player": 
+    case "move_player":
+        // Your move logic
         action_complete = cutscene_move_player(action.x, action.y, action.speed);
         break;
-    case "dialog":
-        if (!instance_exists(obj_dialog)) {
-            if (!variable_instance_exists(id, "dialog_was_shown") || !dialog_was_shown) {
-                // Create dialog if it doesn't exist and wasn't shown before
-                var dialog = instance_create_depth(0, 0, -1000, obj_dialog);
-                dialog.messages = action.messages;
-                dialog.current_message = 0;  // Start with first message
-                dialog.current_char = 0;
-                dialog.draw_message = "";
-                dialog.waiting_for_input = false;
-                dialog_was_shown = true;  // Mark that we've shown this dialog
-            } else {
-                // Dialog was previously shown and now it's gone (player finished it)
+        
+    case "spawn_bunny_animation":
+        // Spawn the bunny animation
+        if (!instance_exists(obj_bunny_on_bench)) {
+            var inst = instance_create_layer(276, 278, "Cutscene", obj_bunny_on_bench);
+            action.bunny_id = inst.id; // Save for reference
+        }
+        action_complete = true;
+        break;
+        
+    case "wait_for_bunny_anim":
+        // Wait for bunny animation to reach a specific frame before fading
+        if (instance_exists(obj_bunny_on_bench)) {
+            var bunny = obj_bunny_on_bench;
+            
+            // When animation is near completion (e.g., 5 frames from end)
+            // Assuming image_speed = 1
+            var frames_before_end = 5;
+            if (bunny.image_index >= bunny.image_number - frames_before_end) {
                 action_complete = true;
-                dialog_was_shown = false;  // Reset for next dialog action
             }
+        } else {
+            // If bunny doesn't exist for some reason, continue
+            action_complete = true;
         }
         break;
+        
+    case "fade_out":
+        // Create fade controller if it doesn't exist
+        if (!instance_exists(obj_fade_controller)) {
+            fade_controller = instance_create_depth(0, 0, -9999, obj_fade_controller);
+        } else {
+            fade_controller = instance_find(obj_fade_controller, 0);
+        }
+        
+        // Start fade out effect
+        with (fade_controller) {
+            fade_out(action.speed, action.hold_time);
+        }
+        
+        // Mark that we're waiting for fade to complete
+        waiting_for_fade = true;
+        action_complete = true;
+        break;
+        
+    case "restore_player":
+        // Restore player visibility
+        if (instance_exists(player_ref)) {
+            player_ref.visible = player_visible_before;
+            
+            // Re-enable player movement
+            if (variable_instance_exists(player_ref, "can_move")) {
+                player_ref.can_move = true;
+            }
+        }
+        
+        // Clean up bunny if it still exists
+        with (obj_bunny_on_bench) {
+            instance_destroy();
+        }
+        
+        action_complete = true;
+        break;
+        
+    case "fade_in":
+        // Create fade controller if it doesn't exist
+        if (!instance_exists(obj_fade_controller)) {
+            fade_controller = instance_create_depth(0, 0, -9999, obj_fade_controller);
+        } else {
+            fade_controller = instance_find(obj_fade_controller, 0);
+        }
+        
+        // Start fade in effect
+        with (fade_controller) {
+            fade_in(action.speed);
+        }
+        
+        // Mark that we're waiting for fade to complete
+        waiting_for_fade = true;
+        action_complete = true;
+        break;
+        
     case "wait":
         wait_time = action.time;
         action_complete = true;
         break;
+        
     case "end_cutscene":
-        global.cutscene_active = false;
-        is_active = false;
         action_complete = true;
         break;
 }

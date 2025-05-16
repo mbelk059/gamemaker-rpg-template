@@ -10,6 +10,19 @@ global.char_colors = {
 
 
 
+global.bench = [
+{
+    msg: "Sit on the bench?", 
+    choices: [ 
+        { text: "Yes", next: "start_bench_cutscene" },
+        { text: "No"}
+    ]
+}
+]
+
+
+
+
 
 
 global.welcome_dialog = [
@@ -90,10 +103,24 @@ global.burger_state3 = [{msg: "You keep checking the burger... It's starting to 
 
 function create_dialog(_messages){
     if (instance_exists(obj_dialog)) return;
-        
-    var _inst = instance_create_depth(0, 0, 0, obj_dialog);
-    _inst.messages = _messages;
-    _inst.current_message = 0;
+
+    var inst = instance_create_depth(0, 0, 0, obj_dialog);
+    inst.messages = _messages;
+    inst.current_message = 0;
+    inst.current_char = 0;
+    inst.draw_message = "";
+    inst.waiting_for_input = false;
+
+    // Check and initialize dialog choices if the first message has them
+    if (array_length(_messages) > 0) {
+        var msg = _messages[0];
+        if (is_struct(msg) && variable_struct_exists(msg, "choices") && is_array(msg.choices)) {
+            inst.dialog_choices = msg.choices;
+            inst.selected_choice = 0;
+        } else {
+            inst.dialog_choices = [];
+        }
+    }
 }
 
 function execute_choice_action(path_name) {

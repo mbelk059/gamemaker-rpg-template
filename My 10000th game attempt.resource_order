@@ -40,6 +40,7 @@
     {"name":"obj_enemy_parent","order":1,"path":"objects/obj_enemy_parent/obj_enemy_parent.yy",},
     {"name":"obj_enemy1","order":2,"path":"objects/obj_enemy1/obj_enemy1.yy",},
     {"name":"obj_enemy2","order":3,"path":"objects/obj_enemy2/obj_enemy2.yy",},
+    {"name":"obj_fade_controller","order":32,"path":"objects/obj_fade_controller/obj_fade_controller.yy",},
     {"name":"obj_fox","order":30,"path":"objects/obj_fox/obj_fox.yy",},
     {"name":"obj_interactable_parent","order":15,"path":"objects/obj_interactable_parent/obj_interactable_parent.yy",},
     {"name":"obj_item_manager","order":2,"path":"objects/obj_item_manager/obj_item_manager.yy",},
