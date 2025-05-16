@@ -21,7 +21,11 @@ global.bench = [
 ]
 
 
-
+global.bench_normal = [
+    {
+        msg: "It's a nicely crafted bench."
+    }
+]
 
 
 
