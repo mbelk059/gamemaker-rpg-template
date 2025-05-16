@@ -27,6 +27,12 @@ global.bench_normal = [
     }
 ]
 
+// Variable to track if the bench cutscene has been played
+// This will persist between room changes
+if (!variable_global_exists("bench_cutscene_played")) {
+    global.bench_cutscene_played = false;
+}
+
 
 
 global.welcome_dialog = [

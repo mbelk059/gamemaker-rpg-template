@@ -72,10 +72,8 @@ if (is_array(dialog_choices) && array_length(dialog_choices) > 0 && waiting_for_
                 // Set cutscene as active
                 controller.is_active = true;
                 
-                // Set the bench as having played its cutscene
-                with (obj_bench) {
-                    cutscene_played = true;
-                }
+                // Set the global flag that bench cutscene has been played
+                global.bench_cutscene_played = true;
                 
                 // Updated sequence with fade effects
                 controller.sequence = [
