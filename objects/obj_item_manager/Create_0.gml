@@ -23,8 +23,8 @@ global.item_list =
     ),
     
     redkey : new create_item(
-        "Red Key",
-        "Opens red doors.",
+        "Key",
+        "Opens doors.",
         spr_redkey,
         function()
         {

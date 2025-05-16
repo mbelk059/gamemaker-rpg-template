@@ -14,6 +14,7 @@
     {"name":"inst_8A9C684","path":"rooms/rm_level4/rm_level4.yy",},
     {"name":"inst_177F7087","path":"rooms/rm_level4/rm_level4.yy",},
     {"name":"inst_21B160C8","path":"rooms/rm_level4/rm_level4.yy",},
+    {"name":"inst_23404FC5","path":"rooms/rm_level4/rm_level4.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -24,6 +25,7 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_warp_to","path":"objects/obj_warp_to/obj_warp_to.yy",},"propertyId":{"name":"yPosition","path":"objects/obj_warp_to/obj_warp_to.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"109",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_warp_to","path":"objects/obj_warp_to/obj_warp_to.yy",},"propertyId":{"name":"roomName","path":"objects/obj_warp_to/obj_warp_to.yy",},"resource":{"name":"rm_level3","path":"rooms/rm_level3/rm_level3.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_level3",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.5625,"scaleY":1.0,"x":267.5,"y":431.0,},
+        {"$GMRInstance":"v1","%Name":"inst_23404FC5","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_23404FC5","objectId":{"name":"obj_bunny_on_bench","path":"objects/obj_bunny_on_bench/obj_bunny_on_bench.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":276.0,"y":278.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Walls","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_32684A72","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_32684A72","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":19.4375,"scaleY":1.0,"x":140.0,"y":223.0,},
