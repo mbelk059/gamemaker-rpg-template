@@ -72,6 +72,11 @@ if (is_array(dialog_choices) && array_length(dialog_choices) > 0 && waiting_for_
                 // Set cutscene as active
                 controller.is_active = true;
                 
+                // Set the bench as having played its cutscene
+                with (obj_bench) {
+                    cutscene_played = true;
+                }
+                
                 // Updated sequence with fade effects
                 controller.sequence = [
                     {type: "move_player", x: obj_player.x, y: obj_player.y - 16, speed: 1},
