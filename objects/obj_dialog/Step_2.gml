@@ -80,7 +80,8 @@ if (is_array(dialog_choices) && array_length(dialog_choices) > 0 && waiting_for_
                     {type: "fade_out", speed: 0.05, hold_time: 30},  // Fade to black
                     {type: "restore_player"},  // Restore player while screen is black
                     {type: "fade_in", speed: 0.05},  // Fade back in
-                    {type: "end_cutscene"}
+                    {type: "end_cutscene"},
+                    {type: "move_player", x: obj_player.x + 2, y: obj_player.y + 10, speed: 1}
                 ];
                 
                 // Kill the dialog box now

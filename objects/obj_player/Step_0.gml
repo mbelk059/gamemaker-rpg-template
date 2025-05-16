@@ -69,3 +69,5 @@ if (keyboard_check_pressed(vk_space)) {
         inst.damage *= damage;
     }
 }
+
+depth = -bbox_bottom;
