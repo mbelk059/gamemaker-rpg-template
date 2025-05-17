@@ -10,6 +10,25 @@ global.char_colors = {
 
 
 
+
+
+
+
+global.employee_door = [
+{
+    msg: "The sign says employees only."
+}
+]
+
+
+
+
+
+
+
+
+
+
 global.bench = [
 {
     msg: "Sit on the bench?", 
@@ -19,7 +38,6 @@ global.bench = [
     ]
 }
 ]
-
 
 global.bench_normal = [
     {
@@ -32,6 +50,13 @@ global.bench_normal = [
 if (!variable_global_exists("bench_cutscene_played")) {
     global.bench_cutscene_played = false;
 }
+
+
+
+
+
+
+
 
 
 
@@ -54,12 +79,26 @@ global.welcome_dialog = [
 }
 ]
 
+
+
+
+
+
+
+
 global.fight_path = [ 
 { 
     name: "Max", 
     msg: "Brave choice! Let's see what you've got." 
 }
 ];
+
+
+
+
+
+
+
 
 global.flee_path = [ 
 { 
@@ -71,6 +110,9 @@ global.flee_path = [
     msg: "dwuqbhduwibhcuwie test"
 }
 ];
+
+
+
 
 
 
@@ -92,6 +134,14 @@ msg: "o"
 ]
 
 
+
+
+
+
+
+
+
+
 global.foxlobby = [
 {
     name: "Fox",
@@ -107,6 +157,17 @@ global.foxlobby = [
 global.burger_state1 = [{msg: "It's a burger." }];
 global.burger_state2 = [{msg: "It's still a burger." }];
 global.burger_state3 = [{msg: "You keep checking the burger... It's starting to get cold." }];
+
+
+
+
+
+
+
+
+
+
+
 
 
 

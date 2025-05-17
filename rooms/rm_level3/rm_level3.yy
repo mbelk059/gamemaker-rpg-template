@@ -21,7 +21,6 @@
     {"name":"inst_643361D4","path":"rooms/rm_level3/rm_level3.yy",},
     {"name":"inst_19314272","path":"rooms/rm_level3/rm_level3.yy",},
     {"name":"inst_54198FB2","path":"rooms/rm_level3/rm_level3.yy",},
-    {"name":"inst_2B5EAD60","path":"rooms/rm_level3/rm_level3.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -40,7 +39,6 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_warp_to","path":"objects/obj_warp_to/obj_warp_to.yy",},"propertyId":{"name":"yPosition","path":"objects/obj_warp_to/obj_warp_to.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"414",},
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_warp_to","path":"objects/obj_warp_to/obj_warp_to.yy",},"propertyId":{"name":"roomName","path":"objects/obj_warp_to/obj_warp_to.yy",},"resource":{"name":"rm_level4","path":"rooms/rm_level4/rm_level4.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_level4",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.875,"scaleY":1.0,"x":376.5,"y":71.0,},
-        {"$GMRInstance":"v1","%Name":"inst_2B5EAD60","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2B5EAD60","objectId":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":416.0,"y":128.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Walls","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_6407E31","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6407E31","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":18.0,"scaleY":3.8125,"x":95.0,"y":51.0,},
