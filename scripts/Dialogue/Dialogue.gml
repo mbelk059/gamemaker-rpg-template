@@ -55,6 +55,13 @@ if (!variable_global_exists("bench_cutscene_played")) {
 
 
 
+if (!variable_global_exists("museum_after_hours")) {
+    global.museum_after_hours = false;
+}
+
+
+
+
 
 
 

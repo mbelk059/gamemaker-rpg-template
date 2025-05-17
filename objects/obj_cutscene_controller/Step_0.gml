@@ -66,6 +66,22 @@ switch (action.type) {
             action_complete = true;
         }
         break;
+    
+    case "remove_npcs":
+        // Get all NPCs and remove them
+        with (obj_npc_parent) {
+            instance_destroy();
+        }
+        // Add any other NPC object types you have
+        // For example:
+        // with (obj_npc2) { instance_destroy(); }
+        // with (obj_npc3) { instance_destroy(); }
+        
+        // You can also add some ambient effects here if desired
+        // For example, dimming the room lights
+        
+        action_complete = true;
+        break;
         
     case "fade_out":
         // Create fade controller if it doesn't exist

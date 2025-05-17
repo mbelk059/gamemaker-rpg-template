@@ -58,29 +58,28 @@ if (is_array(dialog_choices) && array_length(dialog_choices) > 0 && waiting_for_
             if (path == "start_bench_cutscene") {
                 // Create the cutscene controller and assign the cutscene
                 var controller = instance_create_depth(0, 0, 0, obj_cutscene_controller);
-                controller.player_ref = obj_player; // or retrieve however you refer to the player
-                
+                controller.player_ref = obj_player;
                 // IMPORTANT: Store original player visibility before changing it
                 controller.player_visible_before = obj_player.visible;
-                
                 // Hide the player during cutscene
                 obj_player.visible = false;
-                
                 // Disable player movement
                 obj_player.can_move = false;
-                
                 // Set cutscene as active
                 controller.is_active = true;
-                
                 // Set the global flag that bench cutscene has been played
                 global.bench_cutscene_played = true;
                 
-                // Updated sequence with fade effects
+                // Add this line to set the museum to after hours mode
+                global.museum_after_hours = true;
+                
+                // Updated sequence with fade effects and NPC removal
                 controller.sequence = [
                     {type: "move_player", x: obj_player.x, y: obj_player.y - 16, speed: 1},
                     {type: "spawn_bunny_animation"},
                     {type: "wait_for_bunny_anim"},
-                    {type: "fade_out", speed: 0.05, hold_time: 30},  // Fade to black
+                    {type: "fade_out", speed: 0.05, hold_time: 60},  // Longer hold time for effect
+                    {type: "remove_npcs"},  // New action to remove NPCs
                     {type: "restore_player"},  // Restore player while screen is black
                     {type: "fade_in", speed: 0.05},  // Fade back in
                     {type: "end_cutscene"},
